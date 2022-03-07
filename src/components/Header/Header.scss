@@ -1,0 +1,32 @@
+.header {
+  margin: 26rem 0;
+
+  &__text-box > *:not(:last-child) {
+    margin-bottom: 1.3rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__compliment-box > *:not(:last-child) {
+    margin-bottom: 0.4rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  &__compliment {
+    color: #cc9544;
+    font-size: 1.6rem;
+  }
+
+  &__query {
+    font-size: 1.8rem;
+  }
+
+  &__btn {
+    margin-top: 1rem;
+  }
+}

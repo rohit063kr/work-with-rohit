@@ -1,0 +1,46 @@
+.faq {
+  &__cards > *:not(:last-child) {
+  }
+
+  &__card {
+    padding: 2.2rem 2.5rem;
+    font-size: 1.8rem;
+    font-family: "Lato";
+    position: relative;
+    background-color: var(--color-secondary);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    font-size: 2.5rem;
+  }
+
+  &__question {
+    display: flex;
+    color: var(--color-primary);
+    z-index: 11;
+  }
+
+  &__answer {
+    color: var(--color-white);
+    z-index: 10;
+    transform: translateY(-100%);
+    opacity: 0;
+    height: 0;
+    transition: transform 0.4s, opacity 0.5s;
+    margin-bottom: 2rem;
+  }
+
+  &__query {
+    padding-left: 3rem;
+  }
+
+  &__activated &__answer {
+    transform: translateY(0);
+    height: auto;
+    opacity: 1;
+  }
+}

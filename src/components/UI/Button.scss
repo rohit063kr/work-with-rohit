@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 3px;
+  border: 0;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 1rem 2rem;
+  box-shadow: 0 0 16px 0px rgb(0 0 0 / 36%);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 2rem;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  transition: transform 0.4s;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover,
+  &__activated {
+    color: #fff;
+    transform: rotate(3deg) translate(0, -3px) scale(1.1);
+  }
+}

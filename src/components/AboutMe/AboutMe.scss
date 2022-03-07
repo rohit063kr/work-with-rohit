@@ -1,0 +1,25 @@
+.about {
+  &__card {
+    padding: 3rem 1.7rem;
+    color: var(--color-white);
+    background-color: #361500;
+    border-radius: 6px;
+  }
+
+  &__card > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    font-weight: inherit;
+    margin-bottom: 1.7rem;
+  }
+
+  &__para {
+    font-size: 1.8rem;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+  }
+}

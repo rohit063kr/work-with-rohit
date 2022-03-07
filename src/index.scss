@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 57.5%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 47%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 37.5%;
+  }
+}
+
+:root {
+  --color-primary: #cc9544;
+  --color-secondary: #361500;
+
+  --color-bg: #1c0a00;
+
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-bg);
+  font-family: "Lato";
+  font-weight: 300;
+  letter-spacing: 1.4px;
+  word-spacing: 2px;
+}
