@@ -1,5 +1,6 @@
 .faq {
-  &__cards > *:not(:last-child) {
+  &__card-wrapper {
+    margin-bottom: 3rem;
   }
 
   &__card {
@@ -25,13 +26,18 @@
   }
 
   &__answer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: var(--color-white);
     z-index: 10;
     transform: translateY(-100%);
     opacity: 0;
     height: 0;
-    transition: transform 0.4s, opacity 0.5s;
     margin-bottom: 2rem;
+    transition: transform 0.4s, opacity 0.5s;
   }
 
   &__query {
@@ -42,5 +48,6 @@
     transform: translateY(0);
     height: auto;
     opacity: 1;
+    position: relative;
   }
 }
