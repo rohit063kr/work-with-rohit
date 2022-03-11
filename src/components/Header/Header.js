@@ -1,3 +1,4 @@
+// import pic from "../../assets/img/8.png";
 import { useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { contactPageContext } from "../../store/contact-page-context";
@@ -37,6 +38,7 @@ const Header = function (props) {
           Contact me
         </Button>
       </div>
+      {/* <img src={pic} alt="my pic" className="header__img" /> */}
     </div>
   );
 };

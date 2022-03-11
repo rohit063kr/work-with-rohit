@@ -30,9 +30,10 @@ const MyWork = function () {
       <h1 className="sectional-heading heading--secondary">My work</h1>
       <div className="work__cards">
         <div className="work__heading">Dynamic web apps</div>
-        {data?.map((work) => (
-          <MyWorkCard key={work.id} data={work} />
-        ))}
+        {/* Dynamic web apps */}
+        {data?.map((work) => {
+          return <MyWorkCard key={work.id} data={work} />;
+        })}
       </div>
     </section>
   );

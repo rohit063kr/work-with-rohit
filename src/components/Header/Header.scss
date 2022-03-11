@@ -1,5 +1,6 @@
 .header {
   margin: 26rem 0;
+  display: flex;
 
   &__text-box > *:not(:last-child) {
     margin-bottom: 1.3rem;
@@ -24,6 +25,12 @@
 
   &__query {
     font-size: 1.8rem;
+  }
+
+  &__img {
+    width: 30rem;
+    border-radius: 10px;
+    transform: translateY(-5rem);
   }
 
   &__btn {
