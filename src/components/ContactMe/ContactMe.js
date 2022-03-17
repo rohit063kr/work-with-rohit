@@ -44,7 +44,7 @@ const ContactMe = function () {
       </h1>
       <div className="contact__item">
         <img className="contact__logo" src={gmailLogo} />
-        <h2 className="heading--primary">Gmail: rohit063kr@gmail.com</h2>
+        <h2 className="heading--primary">Gmail: rohit0630kr@gmail.com</h2>
       </div>
       <div className="contact__item">
         <img className="contact__logo" src={whatsappLogo} />

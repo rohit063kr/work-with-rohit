@@ -12,7 +12,7 @@ const MyWork = function () {
   useEffect(() => {
     const fetchWorks = async function () {
       const response = await fetch(
-        "https://rohit-portfolio-86971-default-rtdb.firebaseio.com/work.json"
+        "https://real-rohit-default-rtdb.firebaseio.com/work.json"
       );
       const data = await response.json();
 
