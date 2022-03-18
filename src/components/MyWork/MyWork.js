@@ -27,7 +27,7 @@ const MyWork = function () {
     <section className="container my-work" id="work">
       <h1 className="sectional-heading heading--secondary">My work</h1>
       <div className="work__cards">
-        <div className="work__heading">Dynamic web apps</div>
+        {/* <div className="work__heading">Dynamic web apps</div> */}
         {/* Dynamic web apps */}
         {data?.map((work) => {
           return <MyWorkCard key={work.id} data={work} />;
