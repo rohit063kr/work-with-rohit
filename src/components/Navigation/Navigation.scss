@@ -9,19 +9,23 @@
     display: flex;
     align-items: center;
     list-style: none;
+
+    & > *:not(:last-child) {
+      margin-right: 4.6rem;
+
+      @media only screen and (max-width: 450px) {
+        margin-right: 3rem;
+      }
+
+      @media only screen and (max-width: 380px) {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   &__list-item {
     padding: 5rem 0rem;
-
-    &:not(:last-child) {
-      margin-right: 4.6rem;
-    }
-
-    @media only screen and (max-width: 500px) {
-      margin-right: 4rem;
-      padding: 5rem 0rem;
-    }
+    font-size: 2rem;
   }
 
   &__link {
@@ -30,7 +34,7 @@
     // font-weight: 300;
     font-family: "Lato";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: inherit;
     color: rgb(248, 227, 180);
     text-decoration: none;
     letter-spacing: 1.5px;

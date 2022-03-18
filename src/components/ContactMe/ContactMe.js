@@ -40,7 +40,7 @@ const ContactMe = function () {
       <h1 className="heading--primary sectional-heading contact__heading">
         Contact me.
         <br />
-        rohit063kr@gmail.com
+        rohit0630kr@gmail.com
       </h1>
       <div className="contact__item">
         <img className="contact__logo" src={gmailLogo} />

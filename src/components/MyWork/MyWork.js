@@ -7,8 +7,6 @@ import MyWorkCard from "./MyWorkCard";
 const MyWork = function () {
   const [data, setData] = useState();
 
-  useEffect(() => {});
-
   useEffect(() => {
     const fetchWorks = async function () {
       const response = await fetch(
