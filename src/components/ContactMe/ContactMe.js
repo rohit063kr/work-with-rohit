@@ -44,15 +44,24 @@ const ContactMe = function () {
       </h1>
       <div className="contact__item">
         <img className="contact__logo" src={gmailLogo} />
-        <h2 className="heading--primary">Gmail: rohit0630kr@gmail.com</h2>
+        <h2 className="heading--primary contact__text">
+          <span>Gmail:</span>
+          <span>rohit0630kr@gmail.com</span>
+        </h2>
       </div>
       <div className="contact__item">
         <img className="contact__logo" src={whatsappLogo} />
-        <h2 className="heading--primary">Whatsapp: +91 9472194606</h2>
+        <h2 className="heading--primary contact__text">
+          <span>Whatsapp: </span>
+          <span>+91 9472194606</span>
+        </h2>
       </div>
       <div className="contact__item">
         <img className="contact__logo" src={phoneLogo} />
-        <h2 className="heading--primary">Call me: +91 9472194606</h2>
+        <h2 className="heading--primary contact__text">
+          <span>Call me: </span>
+          <span>+91 9472194606</span>
+        </h2>
       </div>
     </div>
   );

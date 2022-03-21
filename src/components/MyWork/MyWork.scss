@@ -12,8 +12,15 @@
 
   &__card {
     border-radius: 10px;
-    padding-bottom: 1rem;
     transition: all 1s;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: 500px) {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   &__card:hover &__btn-left,
@@ -60,10 +67,6 @@
     opacity: 0;
     transition: all 0.4s;
     font-size: 1.5rem;
-
-    @media only screen and (max-width: 800px) {
-      font-size: 2rem;
-    }
   }
 
   &__btn-left {

@@ -37,6 +37,20 @@
     margin-top: 10rem;
   }
 
+  &__text {
+    font-size: 3rem !important;
+    display: flex;
+
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      flex-direction: column;
+      font-size: 2.6rem !important;
+    }
+  }
+
   &__item {
     display: flex;
     align-items: center;
